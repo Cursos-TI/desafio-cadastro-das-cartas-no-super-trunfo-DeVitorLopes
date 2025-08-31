@@ -7,16 +7,59 @@
 //Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+
+    //VARIAVEIS CARTA 1
+    char letrac1;
+    char cidadec1[50];
+    int codigoc1;
+    int populacaoc1;
+    int turisticoc1;
+    float areac1;
+    float pibc1;
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    // VARIAVEIS CARTA 2
+
+    char letrac2;
+    char cidadec2[50];
+    int codigoc2;
+    int populacaoc2;
+    int turisticoc2;
+    float areac2;
+    float pibc2;
+
+    //INICIO DO CODIGO
+
+    printf("---------------------------------- \n");
+    printf("    BEM VINDO AO SUPER TRUNFO! \n");
+    printf("---------------------------------- \n");
+    printf("    Insira os dados da carta 1: \n");
+    printf("---------------------------------- \n");
+
+        //RECEBENDO OS DADOS - CARTA 1
+        printf("Digite uma letra entre 'A'  e 'H' que representará o estado:");
+        scanf("%c", &letrac1);
+
+        printf("Digite o número da carta: \n");
+        scanf("%d", &codigoc1);
+
+        // Limpa o buffer antes do fgets
+        while ((getchar()) != '\n'); // descarta o ENTER
+
+        printf("Digite o nome da cidade: \n");
+        fgets(cidadec1, 50, stdin); 
+
+        printf("Digite a população da cidade: \n");
+        scanf("%d", &populacaoc1);
+
+        printf("Digite a Área em KM² da cidade: \n");
+        scanf("%f", &areac1);
+
+        printf("Digite o PIB da cidade: \n");
+        scanf("%f", &pibc1);
+
+        printf("Digite número de pontos turísticos da cidade:\n");
+        scanf("%d", &turisticoc1);
+
 
     return 0;
 }
